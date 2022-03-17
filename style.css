@@ -57,5 +57,35 @@
     border-top: none;
   }
 
+  .slice{
+    display: none;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 2px solid white;
+    height: 90%;
+    width: 85%;
+    text-align: left;
+}
+
+.darken:before{
+    content: "";
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5));
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 100%;
+    width: 90%;
+    display: block;
+    
+}
+
+.slice1,.slice2,.slice3,.slice4{
+    position: relative;
+}
+
 
 
