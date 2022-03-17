@@ -8,204 +8,225 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'Home')">Home</button>
-        <button class="tablinks" onclick="openCity(event, 'About us')">About us</button>
-        <button class="tablinks" onclick="openCity(event, 'Contact')">Contact</button>
-      </div>
-      
-      <!-- Tab content -->
-      <div id="Home" class="tabcontent">
-        <h3>Home</h3>
-        <p>Come one Come all,have a taste of heaven from our slice of pizza.</p>
-      </div>
-      
-      <div id="About us" class="tabcontent">
-        <h3>About us</h3>
-        <p>We are open 24 hrs, we are located along Mbagathi way.We also offer delivery services,just a dial away.</p>
-      </div>
-      
-      <div id="Contact" class="tabcontent">
-        <h3>Contact</h3>
-        <p>Get to reach us through our e-mail address lexxiebella@gmail.com and call us through +254728673980</p>
-      </div>
-    
-       <div class="area1">
-            <div class="text1">
-                <h1 class="font-effect-shadow-multiple">ANNAPURPA'S POD </h1><br>
-                <p>One slice is never enough!<br><br>We are just a call away,<br><br>Come one Come all.<br><br>
-                Get the best pizza in town at an affordable price.</p>
-            </div>
+    <div class="Mama">
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'Home')">Home</button>
+            <button class="tablinks" onclick="openCity(event, 'About us')">About us</button>
+            <button class="tablinks" onclick="openCity(event, 'Contact')">Contact</button>
+        </div>
+        
+        <!-- Tab content -->
+        <div id="Home" class="tabcontent">
+            <h3>Home</h3>
+            <p>Come one Come all,have a taste of heaven from our slice of pizza.</p>
+        </div>
+        
+        <div id="About us" class="tabcontent">
+            <h3>About us</h3>
+            <p>We are open 24 hrs, we are located along Mbagathi way.We also offer delivery services,just a dial away.</p>
+        </div>
+        
+        <div id="Contact" class="tabcontent">
+            <h3>Contact</h3>
+            <p>Get to reach us through our e-mail address lexxiebella@gmail.com and call us through +254728673980</p>
+        </div>
+        
+        <div class="area1">
+                <div class="text1">
+                    <h1 class="font-effect-shadow-multiple">ANNAPURPA'S POD </h1><br>
+                    <p>One slice is never enough!<br><br>We are just a call away,<br><br>Come one Come all.<br><br>
+                    Get the best pizza in town at an affordable price.</p>
+                </div>
         </div>
 
         <div class="area2">
-            <h3>Our Services</h3>
-            <p>We offer a variety of flavors and even give you a chance to add extra toppings of your own choice.
-                <br>We are simply what they say HOME AWAY FROM HOME. </p><br><br>
-                <div class="container">
-                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
-                      <div class="col slice1"><img src="./images/bbq.jpg" class="img-fluid" alt="">
-                            <div class="slice"><h5>DELANI STUDIO</h5></div>
-                        </div>
-
-                        <form class="row gy-2 gx-3 align-items-center">
-                            <div class="col-auto">
-                              <label class="visually-hidden" for="autoSizingInput">Name</label>
-                              <input type="text" class="form-control" id="autoSizingInput" placeholder="Number of cartons">
+                <h3>Our Services</h3>
+                    <p>We offer a variety of flavors and even give you a chance to add extra toppings of your own choice.
+                        <br>We are simply what they say HOME AWAY FROM HOME. </p><br><br>
+                    <div class="container">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+                        <div class="col slice1"><img src="./images/sample1.avif" class="img-fluid" alt="">
+                                <div class="slice"><h5>BARBEQUE</h5></div>
                             </div>
-                             <div class="col-auto">
-                                <label class="visually-hidden" for="autoSizingInputGroup">Username</label>
-                                <div class="input-group">
-                                        <div class="input-group-text">@</div>
-                                            <input type="e-mail" class="form-control" id="autoSizingInputGroup" placeholder="e-mail">
+
+                            <div class="input-group mb-3">
+                                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Pizza size</button>
+                                <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Small (Kshs 600)</a></li>
+                                <li><a class="dropdown-item" href="#">Medium(Kshs 1000)</a></li>
+                                <li><a class="dropdown-item" href="#">Large(Kshs 1500)</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Extra-large(Kshs 1900)</a></li>
+                                </ul>
+                                <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                            </div>
+                            
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Crust-preference</button>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">Crispy</a></li>
+                                <li><a class="dropdown-item" href="#">Stuffed</a></li>
+                                <li><a class="dropdown-item" href="#">Glutten-free</a></li>
+                                
+                                </ul>
+                            </div>
+                            
+                            <div class="input-group">
+                                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Toppings</button>
+                                <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Beef bitings (Kshs 100 per serving)</a></li>
+                                <li><a class="dropdown-item" href="#">Chicken bittings (Kshs 150 per serving)</a></li>
+                                <li><a class="dropdown-item" href="#">Extra cheese (Kshs 70 per serving)</a></li>
+
+                                </ul>
+                                <input type="text" class="form-control" aria-label="Text input with 2 dropdown buttons">
+                                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Delivered</button>
+                                <ul class="dropdown-menu dropdown-menu-end"><br>
+                                    <li><a class="dropdown-item" href="#">Yes</a></li>
+                                    <li><a class="dropdown-item" href="#">No</a></li>
+                                
+                                </ul>
+                                <input type="number" name="number" id="N" placeholder="Number of pizzas"><br>
+                                
+                            </div>
+                        
+                        
+                            <div class="col slice2"><img src="./images/sample3.jpg" class="img-fluid" alt="">
+                                <div class="slice"><h5>CHICKEN CURRY</h5></div>
+                            </div>
+                                <div class="input-group mb-3">
+                                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Pizza size</button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Small (Kshs 600)</a></li>
+                                        <li><a class="dropdown-item" href="#">Medium (Kshs 1000)</a></li>
+                                        <li><a class="dropdown-item" href="#">Large (Kshs 1500)</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" href="#">Extra-large (Kshs 1900)</a></li>
+                                    </ul>
+                                    <input type="text" class="form-control" aria-label="Text input with dropdown button">
                                 </div>
+                        
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Crust-preference</button>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">Crispy</a></li>
+                                <li><a class="dropdown-item" href="#">Stuffed</a></li>
+                                <li><a class="dropdown-item" href="#">Glutten-free</a></li>
+                                
+                                </ul>
                             </div>
-                            <div class="col-auto">
-                                <label class="visually-hidden" for="autoSizingSelect">Preference</label>
-                                <select class="form-select" id="autoSizingSelect">
-                                    <option selected>Extra Toppings</option>
-                                    <option value="1">Mushrooms</option>
-                                    <option value="2">Chicken bites</option>
-                                    <option value="3">Beef bites</option>
-                                </select>
+                        
+                            <div class="input-group">
+                                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Toppings</button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Beef bitings (Kshs 100 per serving)</a></li>
+                                    <li><a class="dropdown-item" href="#">Chicken bittings (Kshs 150 per serving)</a></li>
+                                    <li><a class="dropdown-item" href="#">Extra cheese (Kshs 70 per serving)</a></li>
+                                </ul>
+                                <input type="text" class="form-control" aria-label="Text input with 2 dropdown buttons">
+                                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Delivered</button>
+                                <ul class="dropdown-menu dropdown-menu-end"><br>
+                                    <li><a class="dropdown-item" href="#">Yes</a></li>
+                                    <li><a class="dropdown-item" href="#">No</a></li>
+                                
+                                </ul>
+                                <input type="number" name="number" id="N" placeholder="Number of pizzas"><br>
+                                
                             </div>
-                            <div class="col-auto">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="autoSizingCheck">
-                                    <label class="form-check-label" for="autoSizingCheck">
-                                        Remember me
-                                    </label>
+                    
+                            <div class="col slice3"><img src="./images/sample5.avif" class="img-fluid" alt="" >
+                                <div class="slice"><h5>MEAT DELUXE</h5></div>
+                            </div>
+                                <div class="input-group mb-3">
+                                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Pizza size</button>
+                                    <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Small (Kshs 600)</a></li>
+                                    <li><a class="dropdown-item" href="#">Medium (Kshs 1000)</a></li>
+                                    <li><a class="dropdown-item" href="#">Large (Kshs 1500)</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Extra-large (Kshs 1900)</a></li>
+                                    </ul>
+                                    <input type="text" class="form-control" aria-label="Text input with dropdown button">
                                 </div>
+                        
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Crust-preference</button>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a class="dropdown-item" href="#">Crispy</a></li>
+                                    <li><a class="dropdown-item" href="#">Stuffed</a></li>
+                                    <li><a class="dropdown-item" href="#">Glutten-free</a></li>
+                                
+                                </ul>
                             </div>
-                            <div class="col-auto">
-                              <button type="submit" class="btn btn-primary">Submit</button>
-                            </div>
-                        </form>
-                      
-                      
-                      <div class="col slice2"><img src="./images/chicken curry.jpg" class="img-fluid" alt="">
-                        <div class="slice"><h5>DELANI STUDIO</h5></div>
-                      </div>
-                      <form class="row gy-2 gx-3 align-items-center">
-                        <div class="col-auto">
-                          <label class="visually-hidden" for="autoSizingInput">Name</label>
-                          <input type="text" class="form-control" id="autoSizingInput" placeholder="Number of cartons">
-                        </div>
-                        <div class="col-auto">
-                            <label class="visually-hidden" for="autoSizingInputGroup">Username</label>
+                        
                             <div class="input-group">
-                                    <div class="input-group-text">@</div>
-                                        <input type="e-mail" class="form-control" id="autoSizingInputGroup" placeholder="e-mail">
+                                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Toppings</button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Beef bitings (Kshs 100 per serving)</a></li>
+                                    <li><a class="dropdown-item" href="#">Chicken bittings (Kshs 150 per serving)</a></li>
+                                    <li><a class="dropdown-item" href="#">Extra cheese (Kshs 70 per serving)</a></li>
+
+                                </ul>
+                                    <input type="text" class="form-control" aria-label="Text input with 2 dropdown buttons">
+                                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Delivered</button>
+                                <ul class="dropdown-menu dropdown-menu-end"><br>
+                                    <li><a class="dropdown-item" href="#">Yes</a></li>
+                                    <li><a class="dropdown-item" href="#">No</a></li>
+                                
+                                </ul>
+                                <input type="number" name="number" id="N" placeholder="Number of pizzas"><br>
+                                
                             </div>
-                        </div>
-                        <div class="col-auto">
-                            <label class="visually-hidden" for="autoSizingSelect">Preference</label>
-                            <select class="form-select" id="autoSizingSelect">
-                                <option selected>Extra Toppings</option>
-                                <option value="1">Mushrooms</option>
-                                <option value="2">Chicken bites</option>
-                                <option value="3">Beef bites</option>
-                            </select>
-                        </div>
-                        <div class="col-auto">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="autoSizingCheck">
-                                <label class="form-check-label" for="autoSizingCheck">
-                                    Remember me
-                                </label>
+                    
+                        
+                            <div class="col slice4"><img src="./images/sample2.avif" class="img-fluid" alt="">
+                                <div class="slice"><h5>HAWAIAN</h5></div>
                             </div>
-                        </div>
-                        <div class="col-auto">
-                          <button type="submit" class="btn btn-primary">Submit</button>
-                        </div>
-                    </form>
-                  
-                      
-                      <div class="col slice3"><img src="./images/meat deluxe.jpg" class="img-fluid" alt="">
-                        <div class="slice"><h5>DELANI STUDIO</h5></div>
-                      </div>
-                      <form class="row gy-2 gx-3 align-items-center">
-                        <div class="col-auto">
-                          <label class="visually-hidden" for="autoSizingInput">Name</label>
-                          <input type="text" class="form-control" id="autoSizingInput" placeholder="Number of cartons">
-                        </div>
-                         <div class="col-auto">
-                            <label class="visually-hidden" for="autoSizingInputGroup">Username</label>
+                                <div class="input-group mb-3">
+                                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Pizza size</button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Small (Kshs 600)</a></li>
+                                        <li><a class="dropdown-item" href="#">Medium (Kshs 1000)</a></li>
+                                        <li><a class="dropdown-item" href="#">Large (Kshs 1500)</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" href="#">Extra-large (Kshs 1900)</a></li>
+                                    </ul>
+                                    <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                                </div>
+                        
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Crust-preference</button>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a class="dropdown-item" href="#">Crispy</a></li>
+                                    <li><a class="dropdown-item" href="#">Stuffed</a></li>
+                                    <li><a class="dropdown-item" href="#">Glutten-free</a></li>
+                                
+                                </ul>
+                            </div>
+                        
                             <div class="input-group">
-                                    <div class="input-group-text">@</div>
-                                        <input type="e-mail" class="form-control" id="autoSizingInputGroup" placeholder="e-mail">
+                                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Toppings</button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Beef bitings (Kshs 100 per serving)</a></li>
+                                    <li><a class="dropdown-item" href="#">Chicken bittings (Kshs 150 per serving)</a></li>
+                                    <li><a class="dropdown-item" href="#">Extra cheese (Kshs 70 per serving)</a></li>
+
+                                </ul>
+                                <input type="text" class="form-control" aria-label="Text input with 2 dropdown buttons">
+                                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Delivered</button>
+                                <ul class="dropdown-menu dropdown-menu-end"><br>
+                                    <li><a class="dropdown-item" href="#">Yes</a></li>
+                                    <li><a class="dropdown-item" href="#">No</a></li>
+                                </ul>
+                                <input type="number" name="number" id="N" placeholder="Number of pizzas"><br>
                             </div>
-                        </div>
-                        <div class="col-auto">
-                            <label class="visually-hidden" for="autoSizingSelect">Preference</label>
-                            <select class="form-select" id="autoSizingSelect">
-                                <option selected>Extra Toppings</option>
-                                <option value="1">Mushrooms</option>
-                                <option value="2">Chicken bites</option>
-                                <option value="3">Beef bites</option>
-                            </select>
-                        </div>
-                        <div class="col-auto">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="autoSizingCheck">
-                                <label class="form-check-label" for="autoSizingCheck">
-                                    Remember me
-                                </label>
-                            </div>
-                        </div>
-                        <div class="col-auto">
-                          <button type="submit" class="btn btn-primary">Submit</button>
-                        </div>
-                    </form>
-                  
-                      
-                      <div class="col slice4"><img src="./images/hawaian.jpg" class="img-fluid" alt="">
-                        <div class="slice"><h5>DELANI STUDIO</h5></div>
-                      </div>
-                      <form class="row gy-2 gx-3 align-items-center">
-                        <div class="col-auto">
-                          <label class="visually-hidden" for="autoSizingInput">Name</label>
-                          <input type="text" class="form-control" id="autoSizingInput" placeholder="Number of cartons">
-                        </div>
-                         <div class="col-auto">
-                            <label class="visually-hidden" for="autoSizingInputGroup">Username</label>
-                            <div class="input-group">
-                                    <div class="input-group-text">@</div>
-                                        <input type="e-mail" class="form-control" id="autoSizingInputGroup" placeholder="e-mail">
-                            </div>
-                        </div>
-                        <div class="col-auto">
-                            <label class="visually-hidden" for="autoSizingSelect">Preference</label>
-                            <select class="form-select" id="autoSizingSelect">
-                                <option selected>Extra Toppings</option>
-                                <option value="1">Mushrooms</option>
-                                <option value="2">Chicken bites</option>
-                                <option value="3">Beef bites</option>
-                            </select>
-                        </div>
-                        <div class="col-auto">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="autoSizingCheck">
-                                <label class="form-check-label" for="autoSizingCheck">
-                                    Remember me
-                                </label>
-                            </div>
-                        </div>
-                        <div class="col-auto">
-                          <button type="submit" class="btn btn-primary">Submit</button>
-                        </div>
-                    </form>
-                  
-                      
-                </div>
-             </div>
-
-
-
-
-        </div>
-
-    </head>
+        </div>      </div>
+    </div>    
+</head>
 
     <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
