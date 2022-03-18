@@ -47,7 +47,7 @@
   }
 
   .slice{
-    color: teal;
+    color: darkblue;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -61,6 +61,15 @@
 .slice1,.slice2,.slice3,.slice4{
     position: relative;
     justify-content: center;
+}
+
+.Mama{
+  background-color: thistle;
+}
+
+.life{
+  float: right;
+  margin: auto;
 }
 
 
