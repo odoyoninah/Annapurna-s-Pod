@@ -36,3 +36,15 @@ function openCity(evt, cityName) {
     }
     x[slideIndex-1].style.display = "block";
   }
+
+  $(document).ready(function(){
+    var Pizza = function(){
+      this.pizzaSize = pizzaSize,
+      this.pizzaCrust = pizzaCrust,
+      this.pizzaToppings = pizzaToppings,
+      this.pizzaNumber = pizzaNumber
+    }
+    $("#submit").click(function(){
+      alert("Your order is received!")
+    })
+  })
