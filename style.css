@@ -55,22 +55,23 @@
     /* border: 2px solid black; */
     height: 50%;
     width: 85%;
-    text-align: left;
+    text-align: center;
 }
 
 .slice1,.slice2,.slice3,.slice4{
     position: relative;
-    /* justify-content: center; */
+    justify-content: center;
+    text-align: center;
 }
 
 .Mama{
   background-color: thistle;
 }
 
-.life{
+/* .life{
   float: right;
   margin: auto;
-}
+} */
 
 .delivery{
   text-align: center;
@@ -81,6 +82,16 @@
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+
+.size{
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
+.number{
+  padding-left: 30%;
+  padding-right: 30%; 
 }
 
 
