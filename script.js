@@ -45,6 +45,52 @@ function openCity(evt, cityName) {
       this.pizzaNumber = pizzaNumber
     }
     $("#submit").click(function(){
-      alert("Your order is received!")
+      alert("Thank you!Your order has been received")
+    })
+  })
+
+  $(document).ready(function(){
+    var Delivery = function(){
+      this.delivery = delivery,
+      this.location = location
+    }
+    $("#total").click(function(){
+      confirm("Thank you!We will deliver your pizza on time")
+    })
+  })
+
+  $(document).ready(function(){
+    var Pizza = function(){
+      this.pizzaSize = pizzaSize,
+      this.pizzaCrust = pizzaCrust,
+      this.pizzaToppings = pizzaToppings,
+      this.pizzaNumber = pizzaNumber
+    }
+    $("#click").click(function(){
+      alert("Thank you!Your order has been received")
+    })
+  })
+
+  $(document).ready(function(){
+    var Pizza = function(){
+      this.pizzaSize = pizzaSize,
+      this.pizzaCrust = pizzaCrust,
+      this.pizzaToppings = pizzaToppings,
+      this.pizzaNumber = pizzaNumber
+    }
+    $("#return").click(function(){
+      alert("Thank you!Your order has been received")
+    })
+  })
+
+  $(document).ready(function(){
+    var Pizza = function(){
+      this.pizzaSize = pizzaSize,
+      this.pizzaCrust = pizzaCrust,
+      this.pizzaToppings = pizzaToppings,
+      this.pizzaNumber = pizzaNumber
+    }
+    $("#output").click(function(){
+      alert("Thank you!Your order has been received")
     })
   })
