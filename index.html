@@ -8,6 +8,32 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <body>
+      <div class="container-fluid">
+      <div id="table">
+        <table>
+          <tr>
+            <th>Pizza parameters</th>
+            <th>Total</th>
+          </tr>
+          
+            <tr>
+              <th>Pizza size total</th>
+              <td id="size"></td>
+              </tr>
+            <th>Pizza toppings total</th>
+            <td id="toppings"></td>
+            <tr>
+              <th>Pizza crust total</th>
+              <td id="crust"></td>
+            </tr>
+            <tr>
+              <th>Pizza number total</th>
+              <td id="number1"></td>
+            </tr>
+            
+        </table>
+      </div>
     
     <div class="Mama">
         <div class="tab">
@@ -45,183 +71,118 @@
             <div class="area2">
                 <h3>Our Services</h3>
                     <p>We offer a variety of flavors and even give you a chance to add extra toppings of your own choice.
-                        <br>We are simply what they say HOME AWAY FROM HOME. </p><br><br>
+                        <br>We are simply what they say HOME AWAY FROM HOME. </p>
+                        <h5>DELIVERY </h5>
+                                        <p>We are a dial away,just reach to us and we deliver food right where you are!</p>
+                                          <br><br>
+
                     <div class="mofimu">
-                        <div class="col slice2 "><img src="./images/piz1.avif" class="img-fluid" alt="">
+                        <!-- <div class="col slice2 "><img src="./images/piz1.avif" class="img-fluid" alt="">
                             <div class="slice"><h1>CORN-MUSHROOM</h1></div>
-                        </div><br>
-                            <div class="input-group mb-3 size ">
-                                <label class="input-group-text" for="inputGroupSelect01">Pizza size</label>
-                                <select class="form-select" id="inputGroupSelect01">
-                                  <option selected>Choose...</option>
+                        </div><br> -->
+                        <div class="form">
+                            <form>
+                              <label for="pizza type"> Pizza flavour</label><br>
+                              <select name="pizza flavour" id="flavour">
+                                <option value="">Select a flavour</option>
+                                <option value="1">Corn-mushroom</option>
+                                <option value="2">Chicken-curry</option>
+                                <option value="3">Meat-deluxe</option>
+                                <option value="4">Hawaian</option>
+                              </select><br>
+                                <label class="" for="">Pizza size</label><br>
+                                <select class="" id="inputGroupSelect01">
+                                  <option value="">Choose...</option>
                                   <option value="small">Small (Kshs 500)</option>
                                   <option value="medium">Medium (Kshs 800)</option>
                                   <option value="large">Large (Kshs 1200)</option>
-                                </select>
-                              </div>
+                                </select><br>
+                             
                               
-                              <div class="input-group mb-3 size">
-                                <select class="form-select" id="inputGroupSelect02">
-                                  <option selected>Choose...</option>
+                                <label class="" for="">Crust-type</label><br>
+                                <select class="" id="inputGroupSelect02">
+                                  <option value="">Choose...</option>
                                   <option value="crispy">Crispy (Kshs 100)</option>
                                   <option value="stuffed">Stuffed (Kshs 200)</option>
                                   <option value="glutten-free">Glutten-free (Kshs 300)</option>
-                                </select>
-                                <label class="input-group-text" for="inputGroupSelect02">Crust-type</label>
-                              </div>
+                                </select><br>
+                                
                               
-                              <div class="input-group mb-3 size">
-                                <button class="btn btn-outline-secondary" type="button">Toppings</button>
-                                <select class="form-select" id="inputGroupSelect03" aria-label="Example select with button addon">
-                                  <option selected>Choose...</option>
+                              
+                                <label class="" for="">Toppings</label><br>
+                                <select class="" id=" inputGroupSelect03">
+                                  <option value="">Choose...</option>
                                   <option value="pineapple">Pineapple (Kshs 100)</option>
                                   <option value="extracheese">Extra-Cheese (Kshs 200)</option>
                                   <option value="beefbitings">Beef-bittings (Kshs 250)</option>
-                                </select>
-                              </div>
+                                </select><br>
+                              
                               
                              
 
-                              <form class="number">
-                                <label>Number Of Pizzas</label>
-                                <input type="number" min="1" max="1000"/>
-                                <br><input type="submit" id="submit"/>
+                              
+                                <label>Number Of Pizzas</label><br>
+                                <input type="number" name="number" class="number" id="" min="1" max="1000"><br>
+                                
+                                <label>Location</label><br>
+                                <select class="" id="delivery">
+                                  <option value="">Select a location</option>
+                                  <option value="within">Within CBD(Kshs 100)</option>
+                                  <option value="outside">Outside CBD(Kshs 300)</option>
+                              </select><br>
+                              <br><input type="submit" class="submit" /><br>
+                              <button type="reset" id="reset">Make another order </button>
 
                               </form><br>
+                            </div><br><br><br>
+                            <h4>PIZZA FLAVOURS</h4>
+                            <div class="row">
+                              <div class="col"><div class="card" style="width: 18rem;">
+                                <img src="./images/piz1.avif" class="card-img-top image" alt="...">
+                                <div class="card-body">
+                                  <p class="card-text"> Corn-mushroom</p>
+                                </div>
+                              </div></div>
+                              <div class="col"><div class="card" style="width: 18rem;">
+                                <img src="./images/piz2.avif" class="card-img-top image" alt="...">
+                                <div class="card-body">
+                                  <p class="card-text">Chicken-curry</p>
+                                </div>
+                              </div></div>
+                              <div class="col"><div class="card" style="width: 18rem;">
+                                <img src="./images/piz3.jpg" class="card-img-top image" alt="...">
+                                <div class="card-body">
+                                  <p class="card-text">Meat-deluxe</p>
+                                </div>
+                              </div></div>
+                              <div class="col"><div class="card" style="width: 18rem;">
+                                <img src="./images/piz4.jpg" class="card-img-top image" alt="...">
+                                <div class="card-body">
+                                  <p class="card-text">Hawaian</p>
+                                </div>
+                              </div></div>
+
+
+                            </div>
+
                            
                         
                         
-                                <div class="col slice2 "><img src="./images/piz2.avif" class="img-fluid" alt="">
+                                <!-- <div class="col slice2 "><img src="./images/piz2.avif" class="img-fluid" alt="">
                                     <div class="slice"><h1>CHICKEN CURRY</h1></div>
-                                </div><br>
-                                <div class="input-group mb-3 size">
-                                    <label class="input-group-text" for="inputGroupSelect01">Pizza size</label>
-                                    <select class="form-select" id="inputGroupSelect01">
-                                    <option selected>Choose...</option>
-                                    <option value="small">Small (Kshs 500)</option>
-                                    <option value="medium">Medium (Kshs 800)</option>
-                                    <option value="large">Large (Kshs 1200)</option>
-                                    </select>
-                                </div>
-                              
-                              <div class="input-group mb-3 size">
-                                <select class="form-select" id="inputGroupSelect02">
-                                  <option selected>Choose...</option>
-                                  <option value="crispy">Crispy (Kshs 100)</option>
-                                  <option value="stuffed">Stuffed (Kshs 200)</option>
-                                  <option value="glutten-free">Glutten-free (Kshs 300)</option>
-                                </select>
-                                <label class="input-group-text" for="inputGroupSelect02">Crust-type</label>
-                              </div>
-                              
-                              <div class="input-group mb-3 size">
-                                <button class="btn btn-outline-secondary" type="button">Toppings</button>
-                                <select class="form-select" id="inputGroupSelect03" aria-label="Example select with button addon">
-                                  <option selected>Choose...</option>
-                                  <option value="pineapple">Pineapple (Kshs 100)</option>
-                                  <option value="extracheese">Extra-Cheese (Kshs 200)</option>
-                                  <option value="beefbitings">Beef-bittings (Kshs 250)</option>
-                                </select>
-                              </div>
-                              
-                             
-
-                              <form class="number">
-                                <label>Number Of Pizzas</label>
-                                <input type="number" min="1" max="1000"/>
-                                <br><input type="submit" id="click"/>
-
-                              </form><br>
+                                </div><br> -->
+                                
                     
-                                <div class="col slice3 "><img src="./images/piz3.jpg" class="img-fluid" alt="" >
+                                <!-- <div class="col slice3 "><img src="./images/piz3.jpg" class="img-fluid" alt="" >
                                     <div class="slice"><h1>MEAT DELUXE</h1></div>
                                 </div><br>
-                                <div class="input-group mb-3 size">
-                                    <label class="input-group-text" for="inputGroupSelect01">Pizza size</label>
-                                    <select class="form-select" id="inputGroupSelect01">
-                                    <option selected>Choose...</option>
-                                    <option value="small">Small (Kshs 500)</option>
-                                    <option value="medium">Medium (Kshs 800)</option>
-                                    <option value="large">Large (Kshs 1200)</option>
-                                    </select>
-                                </div>
-                              
-                              <div class="input-group mb-3 size">
-                                <select class="form-select" id="inputGroupSelect02">
-                                  <option selected>Choose...</option>
-                                  <option value="crispy">Crispy (Kshs 100)</option>
-                                  <option value="stuffed">Stuffed (Kshs 200)</option>
-                                  <option value="glutten-free">Glutten-free (Kshs 300)</option>
-                                </select>
-                                <label class="input-group-text" for="inputGroupSelect02">Crust-type</label>
-                              </div>
-                              
-                              <div class="input-group mb-3 size">
-                                <button class="btn btn-outline-secondary" type="button">Toppings</button>
-                                <select class="form-select" id="inputGroupSelect03" aria-label="Example select with button addon">
-                                  <option selected>Choose...</option>
-                                  <option value="pineapple">Pineapple (Kshs 100)</option>
-                                  <option value="extracheese">Extra-Cheese (Kshs 200)</option>
-                                  <option value="beefbitings">Beef-bittings (Kshs 250)</option>
-                                </select>
-                              </div>
-                              
-                             
-
-                              <form class="number">
-                                <label>Number Of Pizzas</label>
-                                <input type="number" min="1" max="1000"/>
-                                <br><input type="submit" id="return"/>
-
-                              </form><br>
-                        
+                                
                                 <div class="col slice4 "><img src="./images/piz4.jpg" class="img-fluid" alt="">
                                     <div class="slice"><h1>HAWAIAN</h1></div>
-                                </div><br>
-                                <div class="input-group mb-3 size">
-                                    <label class="input-group-text" for="inputGroupSelect01">Pizza size</label>
-                                    <select class="form-select" id="inputGroupSelect01">
-                                    <option selected>Choose...</option>
-                                    <option value="small">Small (Kshs 500)</option>
-                                    <option value="medium">Medium (Kshs 800)</option>
-                                    <option value="large">Large (Kshs 1200)</option>
-                                    </select>
-                                </div>
-                              
-                              <div class="input-group mb-3 size">
-                                <select class="form-select" id="inputGroupSelect02">
-                                  <option selected>Choose...</option>
-                                  <option value="crispy">Crispy (Kshs 100)</option>
-                                  <option value="stuffed">Stuffed (Kshs 200)</option>
-                                  <option value="glutten-free">Glutten-free (Kshs 300)</option>
-                                </select>
-                                <label class="input-group-text" for="inputGroupSelect02">Crust-type</label>
-                              </div>
-                              
-                              <div class="input-group mb-3 size">
-                                <button class="btn btn-outline-secondary" type="button">Toppings</button>
-                                <select class="form-select" id="inputGroupSelect03" aria-label="Example select with button addon">
-                                  <option selected>Choose...</option>
-                                  <option value="pineapple">Pineapple (Kshs 100)</option>
-                                  <option value="extracheese">Extra-Cheese (Kshs 200)</option>
-                                  <option value="beefbitings">Beef-bittings (Kshs 250)</option>
-                                </select>
-                              </div>
-                              
-                             
-
-                              <form class="number">
-                                <label>Number Of Pizzas</label>
-                                <input type="number" min="1" max="1000"/>
-                                <br><input type="submit" id="output"/>
-
-                              </form><br>
-                            </div>  
-                
-                                <div class="delivery">
-                                    <h5>DELIVERY SERVICES</h5>
-                                        <p>We are a dial away,just reach to us and we deliver food right where you are!</p>
-
+                                </div><br> -->
+                                
+                                <!-- <div class="delivery">
+                                    
                                             <img class="mySlides" src="./images/step1.1.jpg">
                                             <img class="mySlides" src="./images/step3.3delivery.jpg">
                                             <img class="mySlides" src="./images/step5delivery.jpg">
@@ -236,29 +197,27 @@
                                                 <option value="no">No</option>
                                             </select> -->
                                             
-                                            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-                                                <option selected>Select a location</option>
-                                                <option value="within">Within CBD(Kshs 100)</option>
-                                                <option value="outside">Outside CBD(Kshs 300)</option>
-                                            </select>
+                                          
+                                          <!-- </div>  -->
+                                            <!-- <button type="button" id="total" class="btn btn-primary btn-sm">Total</button> -->
+                                            
+                                
 
-                                            <button type="button" id="total" class="btn btn-primary btn-sm">Total</button>
-                                </div>
             </div> 
 
                
     
     
-    </div>      
+    </div> 
         
+</head><br>
 
 
 
-</head>
-
-    <body>
+    
       <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+  </div>
 </body>
 </html>
