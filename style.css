@@ -1,18 +1,46 @@
 .area1{
-    background-image: url(./images/intro2.jpg);
+    background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) ,url(./images/intro2.jpg);
     background-repeat: no-repeat;
     background-position: left;
     height: 100%;
     width: 100%;
-   
+    background-size: cover;
+    padding-top: 5%;
+    padding-bottom: 5%;
     
+}
+.area2{
+  text-align: center;
+}
+form{
+  border: 1px solid;
+  width: 24rem;
+  height: 28rem;
+  padding: 1rem;
+  
+}
+label{
+  color: brown;
+  font-weight: bolder;
+}
+input,select{
+width: 15rem;
+height: 2rem;
+}
+.form{
+  display: flex;
+  justify-content: center;
+}
+.image{
+  height: 15rem;
 }
 
 .text1{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-family: "Sofia", sans-serif;
     font-size: 20px;
-    color: teal;
+    color: white;
+    text-align: center;
 }
 
 .tab {
@@ -47,21 +75,21 @@
   }
 
   .slice{
-    color: turquoise;
-    position: absolute;
+    color: white;
+    /* position: absolute; */
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     /* border: 2px solid black; */
     height: 50%;
     width: 85%;
-    text-align: center;
+    /* text-align: left; */
 }
 
 .slice1,.slice2,.slice3,.slice4{
     position: relative;
     justify-content: center;
-    text-align: center;
+    text-align: left;
 }
 
 .Mama{
@@ -97,7 +125,21 @@
   padding-right: 30%; 
 }
 
-
+table, tr, th {
+  border: 1px solid;
+}
+#table{
+  text-align: center;
+ 
+  display: flex;
+   justify-content: center;
+   position: absolute;
+   margin-top: 40vh;
+   margin-left: 80vw;
+   position: fixed;
+   z-index: 99;
+  opacity: 0;
+}
 
 
 
